@@ -3,27 +3,22 @@ import portfolioImage from '../assets/images/hero-img.jpg';
 
 
 const Hero = () => {
-    return (
-        <section className="hero-section">
-          <div className="hero-content">
-            <h1 className="hero-title">Welcome, I'm William.</h1>
-            <p className="hero-subtitle">
-            I am a professional web developer specializing in creating responsive and user-friendly websites.
-            </p>
-            <div className="hero-buttons">
-              <a href="#projects" className="hero-btn primary-btn">
-                My Projects
-              </a>
-              <a href="#contact" className="hero-btn secondary-btn">
-                About me
-              </a>
-            </div>
-          </div>
-          <div className="hero-image">
-            <img src={portfolioImage} alt="Portfolio Showcase" />
-          </div>
-        </section>
-      );
-    };
-  
-  export default Hero;
+  return (
+    <div className="hero-container">
+      <div className="hero-content">
+        <img className="hero-img" src={portfolioImage} alt="Portfolio Showcase" />
+        <h1>Hi, I'm William</h1>
+        <p>
+          a Web Developer 
+        </p>
+        <div className="hero-actions">
+          <a href="#projects" className="btn-primary">
+            My Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
